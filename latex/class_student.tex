@@ -1,0 +1,451 @@
+\hypertarget{class_student}{}\section{Student Class Reference}
+\label{class_student}\index{Student@{Student}}
+
+
+Class for student.  
+
+
+
+
+{\ttfamily \#include $<$student.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}\label{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}} 
+\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for an empty object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student_a2b3b5e10ef68426ac7e4e2247b52d7b2}{Student}} (std\+::string v, std\+::string p, int e, std\+::vector$<$ int $>$ d)
+\begin{DoxyCompactList}\small\item\em Constructor for a filled object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_student_adc2f9fd3332da62021928fcabac83ebd}{get\+Average}} ()
+\begin{DoxyCompactList}\small\item\em Gets the average. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_student_aeb6a5deff034e8e9c2e3b066fdae1a7b}{get\+Median}} ()
+\begin{DoxyCompactList}\small\item\em Gets the median. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_student_a020b2a94967c9e5868ccc98e2fe6258b}{get\+Last\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Gets the last name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_af289cfb2ae8a57077bd91062b9769719}{set\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_ab33cbd7f8da4c170dd7227d52b2fa8a0}{set\+Last\+Name}} (std\+::string last\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the last name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a4ca92755dbd4575a66e6266408a62414}{set\+Exam}} (int exam)
+\begin{DoxyCompactList}\small\item\em Sets the exam. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a393e0c0481850a2bc316894c252ec8b2}{set\+Marks}} (std\+::vector$<$ int $>$ marks)
+\begin{DoxyCompactList}\small\item\em Sets the marks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a70e7e26775d28c57a44eb30444ebe6cf}{set\+Average}} (double aver)
+\begin{DoxyCompactList}\small\item\em Sets the average. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a18bd18da05116b937e6ace308da8b8d3}{set\+Median}} (double med)
+\begin{DoxyCompactList}\small\item\em Sets the median. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a9e9043b18fba023db54fb17fa29fc9b2}{operator$>$}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads $>$ operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_acd100733dd2521ea46c739cbafa727f6}{operator$<$}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads $<$ operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a39be9cda43dd5af76987a77ab33b21e3}{operator$>$=}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads $>$= operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a26ac75f112a5103217cf31e7bd8d6e9c}{operator$<$=}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads $<$= operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a4023157958bdbdca27935f3ded2b5258}{operator==}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads == operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_student_a58c13f22a8458e3ed6cf0afceebc3e31}{operator!=}} (const \mbox{\hyperlink{class_student}{Student}} \&stud)
+\begin{DoxyCompactList}\small\item\em overloads != operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_acdbfa6cd31d8219452acb6fe8d33f9f4}{add\+Student}} (T \&, std\+::string, std\+::string, std\+::vector$<$ int $>$, int)
+\begin{DoxyCompactList}\small\item\em Adds a student to a selected container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_ade7fdda87cc4f6baed40035bf86be5ac}{print\+Student}} (T \&)
+\begin{DoxyCompactList}\small\item\em Prints out students for a selected container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_a6e26d421e3d6104e444822f280523514}{read\+Students\+From\+File}} (T \&, std\+::string)
+\begin{DoxyCompactList}\small\item\em Reads students from a selected file. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_student_a094a3acbb560126e8bb80b657d0e2a1b}{sort\+Container}} (T \&)
+\begin{DoxyCompactList}\small\item\em Sorts a container by students last name. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{class_student_a3f98f5b1b8210de4bbeef7a49249dec7}{operator$<$$<$}} (std\+::ostream \&os, \mbox{\hyperlink{class_student}{Student}} stud)
+\begin{DoxyCompactList}\small\item\em overloaded the operator$<$$<$ to return student data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for student. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_student_a2b3b5e10ef68426ac7e4e2247b52d7b2}\label{class_student_a2b3b5e10ef68426ac7e4e2247b52d7b2}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\subsubsection{\texorpdfstring{Student()}{Student()}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{std\+::string}]{v,  }\item[{std\+::string}]{p,  }\item[{int}]{e,  }\item[{std\+::vector$<$ int $>$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for a filled object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em v} & Students name \\
+\hline
+\mbox{\tt in}  & {\em p} & Students last name \\
+\hline
+\mbox{\tt in}  & {\em e} & Students exam mark \\
+\hline
+\mbox{\tt in}  & {\em d} & Students marks vector \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_student_adc2f9fd3332da62021928fcabac83ebd}\label{class_student_adc2f9fd3332da62021928fcabac83ebd}} 
+\index{Student@{Student}!get\+Average@{get\+Average}}
+\index{get\+Average@{get\+Average}!Student@{Student}}
+\subsubsection{\texorpdfstring{get\+Average()}{getAverage()}}
+{\footnotesize\ttfamily double Student\+::get\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the average. 
+
+\begin{DoxyReturn}{Returns}
+The average. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a020b2a94967c9e5868ccc98e2fe6258b}\label{class_student_a020b2a94967c9e5868ccc98e2fe6258b}} 
+\index{Student@{Student}!get\+Last\+Name@{get\+Last\+Name}}
+\index{get\+Last\+Name@{get\+Last\+Name}!Student@{Student}}
+\subsubsection{\texorpdfstring{get\+Last\+Name()}{getLastName()}}
+{\footnotesize\ttfamily std\+::string Student\+::get\+Last\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the last name. 
+
+\begin{DoxyReturn}{Returns}
+The last name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_aeb6a5deff034e8e9c2e3b066fdae1a7b}\label{class_student_aeb6a5deff034e8e9c2e3b066fdae1a7b}} 
+\index{Student@{Student}!get\+Median@{get\+Median}}
+\index{get\+Median@{get\+Median}!Student@{Student}}
+\subsubsection{\texorpdfstring{get\+Median()}{getMedian()}}
+{\footnotesize\ttfamily double Student\+::get\+Median (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the median. 
+
+\begin{DoxyReturn}{Returns}
+The median. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a58c13f22a8458e3ed6cf0afceebc3e31}\label{class_student_a58c13f22a8458e3ed6cf0afceebc3e31}} 
+\index{Student@{Student}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Student\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads != operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} does not have an equal average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_acd100733dd2521ea46c739cbafa727f6}\label{class_student_acd100733dd2521ea46c739cbafa727f6}} 
+\index{Student@{Student}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Student\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads $<$ operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} has a lower average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a26ac75f112a5103217cf31e7bd8d6e9c}\label{class_student_a26ac75f112a5103217cf31e7bd8d6e9c}} 
+\index{Student@{Student}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Student\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads $<$= operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} has a lower or equal average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a4023157958bdbdca27935f3ded2b5258}\label{class_student_a4023157958bdbdca27935f3ded2b5258}} 
+\index{Student@{Student}!operator==@{operator==}}
+\index{operator==@{operator==}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Student\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads == operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} has an equal average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a9e9043b18fba023db54fb17fa29fc9b2}\label{class_student_a9e9043b18fba023db54fb17fa29fc9b2}} 
+\index{Student@{Student}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Student\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads $>$ operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} has a higher average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a39be9cda43dd5af76987a77ab33b21e3}\label{class_student_a39be9cda43dd5af76987a77ab33b21e3}} 
+\index{Student@{Student}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Student\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overloads $>$= operator for \mbox{\hyperlink{class_student}{Student}} class. Compares by average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stud} & The \mbox{\hyperlink{class_student}{Student}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if left \mbox{\hyperlink{class_student}{Student}} has a higher or equal average, False otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a70e7e26775d28c57a44eb30444ebe6cf}\label{class_student_a70e7e26775d28c57a44eb30444ebe6cf}} 
+\index{Student@{Student}!set\+Average@{set\+Average}}
+\index{set\+Average@{set\+Average}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Average()}{setAverage()}}
+{\footnotesize\ttfamily void Student\+::set\+Average (\begin{DoxyParamCaption}\item[{double}]{aver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em aver} & The aver \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a4ca92755dbd4575a66e6266408a62414}\label{class_student_a4ca92755dbd4575a66e6266408a62414}} 
+\index{Student@{Student}!set\+Exam@{set\+Exam}}
+\index{set\+Exam@{set\+Exam}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Exam()}{setExam()}}
+{\footnotesize\ttfamily void Student\+::set\+Exam (\begin{DoxyParamCaption}\item[{int}]{exam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the exam. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em exam} & The exam \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_ab33cbd7f8da4c170dd7227d52b2fa8a0}\label{class_student_ab33cbd7f8da4c170dd7227d52b2fa8a0}} 
+\index{Student@{Student}!set\+Last\+Name@{set\+Last\+Name}}
+\index{set\+Last\+Name@{set\+Last\+Name}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Last\+Name()}{setLastName()}}
+{\footnotesize\ttfamily void Student\+::set\+Last\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{last\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the last name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em last\+Name} & The last name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a393e0c0481850a2bc316894c252ec8b2}\label{class_student_a393e0c0481850a2bc316894c252ec8b2}} 
+\index{Student@{Student}!set\+Marks@{set\+Marks}}
+\index{set\+Marks@{set\+Marks}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Marks()}{setMarks()}}
+{\footnotesize\ttfamily void Student\+::set\+Marks (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{marks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the marks. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em marks} & The marks \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a18bd18da05116b937e6ace308da8b8d3}\label{class_student_a18bd18da05116b937e6ace308da8b8d3}} 
+\index{Student@{Student}!set\+Median@{set\+Median}}
+\index{set\+Median@{set\+Median}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Median()}{setMedian()}}
+{\footnotesize\ttfamily void Student\+::set\+Median (\begin{DoxyParamCaption}\item[{double}]{med }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the median. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em med} & The median \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_af289cfb2ae8a57077bd91062b9769719}\label{class_student_af289cfb2ae8a57077bd91062b9769719}} 
+\index{Student@{Student}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Student@{Student}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Student\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & The name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_student_acdbfa6cd31d8219452acb6fe8d33f9f4}\label{class_student_acdbfa6cd31d8219452acb6fe8d33f9f4}} 
+\index{Student@{Student}!add\+Student@{add\+Student}}
+\index{add\+Student@{add\+Student}!Student@{Student}}
+\subsubsection{\texorpdfstring{add\+Student}{addStudent}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void add\+Student (\begin{DoxyParamCaption}\item[{T \&}]{stud,  }\item[{std\+::string}]{name,  }\item[{std\+::string}]{last\+Name,  }\item[{std\+::vector$<$ int $>$}]{marks,  }\item[{int}]{exam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Adds a student to a selected container. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em stud} & container \\
+\hline
+\mbox{\tt in}  & {\em name} & Students name \\
+\hline
+\mbox{\tt in}  & {\em last\+Name} & Students last name \\
+\hline
+\mbox{\tt in}  & {\em marks} & Students marks vector \\
+\hline
+\mbox{\tt in}  & {\em exam} & Students exam mark\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & container type \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{class_student_a3f98f5b1b8210de4bbeef7a49249dec7}\label{class_student_a3f98f5b1b8210de4bbeef7a49249dec7}} 
+\index{Student@{Student}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Student@{Student}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{class_student}{Student}}}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+overloaded the operator$<$$<$ to return student data 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em os} & The output stream \\
+\hline
+\mbox{\tt in}  & {\em stud} & \mbox{\hyperlink{class_student}{Student}} object to be outputted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Students data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_ade7fdda87cc4f6baed40035bf86be5ac}\label{class_student_ade7fdda87cc4f6baed40035bf86be5ac}} 
+\index{Student@{Student}!print\+Student@{print\+Student}}
+\index{print\+Student@{print\+Student}!Student@{Student}}
+\subsubsection{\texorpdfstring{print\+Student}{printStudent}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void print\+Student (\begin{DoxyParamCaption}\item[{T \&}]{stud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Prints out students for a selected container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stud} & container\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & container type \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{class_student_a6e26d421e3d6104e444822f280523514}\label{class_student_a6e26d421e3d6104e444822f280523514}} 
+\index{Student@{Student}!read\+Students\+From\+File@{read\+Students\+From\+File}}
+\index{read\+Students\+From\+File@{read\+Students\+From\+File}!Student@{Student}}
+\subsubsection{\texorpdfstring{read\+Students\+From\+File}{readStudentsFromFile}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void read\+Students\+From\+File (\begin{DoxyParamCaption}\item[{T \&}]{stud,  }\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Reads students from a selected file. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em stud} & container \\
+\hline
+\mbox{\tt in}  & {\em file\+Name} & name of the file\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & container type \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{class_student_a094a3acbb560126e8bb80b657d0e2a1b}\label{class_student_a094a3acbb560126e8bb80b657d0e2a1b}} 
+\index{Student@{Student}!sort\+Container@{sort\+Container}}
+\index{sort\+Container@{sort\+Container}!Student@{Student}}
+\subsubsection{\texorpdfstring{sort\+Container}{sortContainer}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void sort\+Container (\begin{DoxyParamCaption}\item[{T \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sorts a container by students last name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stud} & container\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & container type \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+student.\+h\end{DoxyCompactItemize}

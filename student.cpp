@@ -83,7 +83,7 @@ void addStudentUI(std::vector<Student> &stud){
 }
 
 bool customCompare(Student &stud1, Student &stud2){
-    return stud1.getPavarde() < stud2.getPavarde();
+    return stud1.getLastName() < stud2.getLastName();
 }
 
 template <> void sortContainer(std::vector<Student> &stud){

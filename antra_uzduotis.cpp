@@ -5,6 +5,7 @@
 #include <chrono>
 #include <deque>
 #include <list>
+// #include "fakeVector.h"
 #include "student.h"
 #include "antra_math.h"
 
@@ -17,7 +18,6 @@ template<typename T> void fileTest1(int fileCount){
         const std::string fileName = "kursiokai" + std::to_string(i) + ".txt";
         readStudentsFromFile(students, fileName);
         auto point2 = getTime();
-        //sortContainer(students);
         const auto cSize = students.size();
         T losers;
         T winners;
@@ -26,6 +26,7 @@ template<typename T> void fileTest1(int fileCount){
                 winners.push_back(v);
             else losers.push_back(v);
         }
+        // printStudent(winners);
         auto end = getTime();
         std::cout << std::setw(width) << cSize << " | " << std::chrono::duration<double>(end-start).count() << "s " << std::endl;
     }
@@ -46,18 +47,33 @@ template<typename T> void fileTest2(int fileCount){
         //sortContainer(students);
         const auto vSize = students.size();
         auto pivot = std::partition(students.begin(), students.end(), compareByAverage);
-        auto it = students.end();
-        advance(it, -1);
-        advance(pivot, -1);
-        T losers;
-        while (it != pivot){
-            losers.push_back(*it);
-            students.pop_back();
-            it--;
-        }
+        T losers(pivot, students.end());
+        students.erase(pivot, students.end());
         auto end = getTime();
         std::cout << std::setw(width) << vSize << " | "<< std::chrono::duration<double>(end-start).count() << "s" << std::endl;
     }
+}
+
+template<typename T> double fileTest3(int fileSize){
+    auto start = getTime();
+    T students;
+    const std::string fileName = "kursiokai" + std::to_string(fileSize) + ".txt";
+    readStudentsFromFile(students, fileName);
+    //sortContainer(students);
+    const auto vSize = students.size();
+    auto pivot = std::partition(students.begin(), students.end(), compareByAverage);
+    auto it = students.end();
+    advance(it, -1);
+    advance(pivot, -1);
+    T losers;
+    while (it != pivot){
+        losers.push_back(*it);
+        students.pop_back();
+        it--;
+    }
+    auto end = getTime();
+    double totalTime = static_cast<double>(std::chrono::duration<double>(end-start).count());
+    return totalTime;
 }
 
 template<typename T> void fileTestUI(std::string name, int fileCount){
@@ -78,12 +94,11 @@ int main(){
         std::cout << "3: Generuoti faila" << std::endl;
         std::cout << "4: Isvesti duomenu lentele" << std::endl;
         std::cout << "5: Testuoti konteinerius" << std::endl;
+        std::cout << "6: Vidutinio laiko testavimas" << std::endl;
         std::cout << "Pasirinkite veiksma: ";
         std::string action = safeInput();
 
-        if (action.compare("1") == 0){
-           addStudentUI(studentVector);
-        } else if (action.compare("2") == 0){
+        if (action.compare("2") == 0){
             std::string fileName;
             std::cout << "Iveskite failo pavadinima: ";
             fileName = safeInput();
@@ -126,8 +141,10 @@ int main(){
                     std::cout << "3: Deque" << std::endl;
                     std::cout << "Pasirinkite veiksma: ";
                     int containerAction = safeIntInput();
-                    if (containerAction == 1)
-                        fileTestUI<std::vector<Student>>("Vector", fileCount);
+                    if (containerAction == 1){
+                        fileTestUI<std::vector<Student>>("Tikras Vector", fileCount);
+                        // fileTestUI<fake::vector<Student>>("Fake Vector", fileCount);
+                    }
                     else if (containerAction == 2)
                         fileTestUI<std::list<Student>>("List", fileCount);
                     else if (containerAction == 3)
@@ -140,6 +157,22 @@ int main(){
                 std::cout << msg << std::endl;
             }
                 
+        } else if (action.compare("6") == 0){
+            const int testCount = 100;
+            const int fileSize = 4;
+            std::cout << std::endl;
+            std::cout << "File size   " << pow(10, fileSize) << std::endl;
+            std::cout << "Test number " << testCount << std::endl; 
+            const std::string fileName = "kursiokai"+std::to_string(fileSize)+ ".txt";
+            createStudentFile(static_cast<unsigned int>(pow(10, fileSize)), fileName);
+            // double totalFakeTime = 0;
+            double totalRealTime = 0;
+            for (int i = 0; i < testCount; i++){
+                totalRealTime += fileTest3<std::vector<Student>>(fileSize);
+                // totalFakeTime += fileTest3<fake::vector<Student>>(fileSize);
+            }
+            std::cout << "Real average time: " << totalRealTime/testCount << std::endl;
+            // std::cout << "Fake average time: " << totalFakeTime/testCount << std::endl;
         } else if (action.compare("0") == 0){
             break;
         } else 

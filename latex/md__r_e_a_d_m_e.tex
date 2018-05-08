@@ -1,0 +1,78 @@
+\subsection*{Vertinimas}
+
+
+\begin{DoxyItemize}
+\item cmake
+\item releasai
+\end{DoxyItemize}
+
+\subsection*{Programos tikslas}
+
+Programa skirta saugoti ir apdoroti studento duomenis bei išbandyti įvairius duomenų konteinerius.
+
+Programa galima\+:
+\begin{DoxyEnumerate}
+\item Įvesti studento duomenis ranka.
+\item Įvesti studento duomenis iš failo$\ast$.
+\item Sugeneruoti studentų failą.
+\item Išvesti duomenų lentelę.
+\item Išbandyti {\ttfamily vector}, {\ttfamily list} ir {\ttfamily deque} duomenų konteinerius.
+\end{DoxyEnumerate}
+
+$\ast$\+Failo formatas Pavardė Vardas Pazymys1 ... PazymysN Egzaminas, kur N sveikasis skaicius nuo 1 iki 10.
+
+\subsection*{Programos naudojimas}
+
+Paleidę šią programą pamatysite meniu\+:
+
+
+
+Veiksmai 0-\/4 turėtų savaime suprantami. Veiksmas 5 prašo įvesti sveikąjį skaičių, kuris nurodo, kiek failų bus sugeneruota. Kiekvieną failą sudaro 10$^\wedge$n eilučių su studentų įrašais. Po to pasirenkate norimą konteinerio tipą ir programa jį išbandys su visais sugeneruotais failais dviem strategijomis\+:
+\begin{DoxyEnumerate}
+\item Studentai nuskaitomi į vieną konteinerį {\ttfamily students} paskui vieni įrašomi į {\ttfamily losers} kiti į {\ttfamily winners}.
+\item Studentai nuskaitomi į vieną konteinerį {\ttfamily students}, įrašai surikiuojami, paskui vieni įrašomi į {\ttfamily losers} ir ištrinami iš {\ttfamily students}. Programa nurodo laiką bandant abi strategijas.
+\end{DoxyEnumerate}
+
+  
+
+\subsection*{Programos įdiegimas}
+
+
+\begin{DoxyEnumerate}
+\item Atsisiųskite \href{https://github.com/BlackDude22/AntraUzduotis/releases}{\tt {\bfseries naujausią programos versiją.}}~\newline
+
+\item Extract\textquotesingle{}inkite failus į pasirinktą vietą.
+\item Atsidarę norimą terminalą (pvz. Windows Power\+Shell) įveskite\+:
+
+cd $<$pasirinktas adresas$>$=\char`\"{}\char`\"{}$>$ g++ -\/std=c++11 $\ast$.cpp ~\newline
+ ./a
+\end{DoxyEnumerate}
+
+\subsection*{Versijų istorija}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v1.0}{\tt {\bfseries v1.\+0}}~\newline
+(naujausia versija)}
+
+\paragraph*{Pridėta}
+
+
+\begin{DoxyEnumerate}
+\item UI
+\item Safe\+Input
+\item Safe\+Int\+Input
+\end{DoxyEnumerate}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v0.5}{\tt {\bfseries v0.\+5}}~\newline
+}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v0.4}{\tt {\bfseries v0.\+4}}~\newline
+}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v0.3}{\tt {\bfseries v0.\+3}}~\newline
+}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v0.2}{\tt {\bfseries v0.\+2}}~\newline
+}
+
+\subsubsection*{\href{https://github.com/BlackDude22/AntraUzduotis/releases/tag/v0.1}{\tt {\bfseries v0.\+1}}~\newline
+}
