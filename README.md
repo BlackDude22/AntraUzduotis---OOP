@@ -1,10 +1,12 @@
 # AntraUzduotis
 
-## Įdomūss dalykai
+## Įdomūs dalykai
 
+```cpp
 auto pivot = std::partition(students.begin(), students.end(), compareByAverage);
 T losers(pivot, students.end());
 students.erase(pivot, students.end());
+```
 
 ## Spartos analizė (100000 studentų)
 
