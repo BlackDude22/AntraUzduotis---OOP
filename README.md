@@ -8,6 +8,25 @@ T losers(pivot, students.end());
 students.erase(pivot, students.end());
 ```
 
+```cpp
+class Student{
+private:
+	std::string name;
+	std::string last_name;
+public:
+	Student(std::string n = "", std::string l = "") : name(n), last_name(l) {};
+	void printStudent(){
+		std::cout << name << ' ' << last_name << std::endl;
+	}
+};
+
+int main(){
+	std::vector<Student> student_vector;
+	student_vector.emplace_back("Daugirdas", "Krukauskas");
+	student_vector.at(0).printStudent();
+}
+```
+
 ## Spartos analizė (100000 studentų)
 
 | Optimization flag |  Strategy | Time |
