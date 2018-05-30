@@ -53,45 +53,45 @@ RM = "C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis
+CMAKE_SOURCE_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/AntraUzduotis.dir
+# Target rules for target CMakeFiles/AntraUzduotis___OOP.dir
 
 # All Build rule for target.
-CMakeFiles/AntraUzduotis.dir/all:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/depend
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target AntraUzduotis"
-.PHONY : CMakeFiles/AntraUzduotis.dir/all
+CMakeFiles/AntraUzduotis___OOP.dir/all:
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/depend
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target AntraUzduotis___OOP"
+.PHONY : CMakeFiles/AntraUzduotis___OOP.dir/all
 
 # Include target in all.
-all: CMakeFiles/AntraUzduotis.dir/all
+all: CMakeFiles/AntraUzduotis___OOP.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/AntraUzduotis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles 4
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntraUzduotis.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/AntraUzduotis.dir/rule
+CMakeFiles/AntraUzduotis___OOP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntraUzduotis___OOP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/AntraUzduotis___OOP.dir/rule
 
 # Convenience name for target.
-AntraUzduotis: CMakeFiles/AntraUzduotis.dir/rule
+AntraUzduotis___OOP: CMakeFiles/AntraUzduotis___OOP.dir/rule
 
-.PHONY : AntraUzduotis
-
-# clean rule for target.
-CMakeFiles/AntraUzduotis.dir/clean:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/clean
-.PHONY : CMakeFiles/AntraUzduotis.dir/clean
+.PHONY : AntraUzduotis___OOP
 
 # clean rule for target.
-clean: CMakeFiles/AntraUzduotis.dir/clean
+CMakeFiles/AntraUzduotis___OOP.dir/clean:
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/clean
+.PHONY : CMakeFiles/AntraUzduotis___OOP.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/AntraUzduotis___OOP.dir/clean
 
 .PHONY : clean
 
