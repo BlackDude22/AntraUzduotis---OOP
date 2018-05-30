@@ -1,13 +1,18 @@
 # AntraUzduotis
 
-## Spartos analizė
+
+## Spartos analizė (100000 studentų)
 
 | Optimization flag |  Strategy | Time |
 |-------------------|-----------|------|
 |None |  1 | 0.5759|
 | | 2 | 0.5713|
-| 01 | 1 | |
-| | 2 | |
+| 01 | 1 | 0.5573 |
+| | 2 | 0.4483 |
+| 02 | 1 | 0.3722 |
+| | 2 | 0.3288 |
+| 03 | 1 | 0.2967 |
+| | 2 | 0.2821 |
 
 ## Vertinimas
 
