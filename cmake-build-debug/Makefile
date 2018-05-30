@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2018.1\bin\cmake\bin\cmake.exe" -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis
+CMAKE_SOURCE_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lukis\OneDrive\Documents\GitHub\AntraUzduotis---OOP\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AntraUzduotis
+# Target rules for targets named AntraUzduotis___OOP
 
 # Build rule for target.
-AntraUzduotis: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 AntraUzduotis
-.PHONY : AntraUzduotis
+AntraUzduotis___OOP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 AntraUzduotis___OOP
+.PHONY : AntraUzduotis___OOP
 
 # fast build rule for target.
-AntraUzduotis/fast:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/build
-.PHONY : AntraUzduotis/fast
+AntraUzduotis___OOP/fast:
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/build
+.PHONY : AntraUzduotis___OOP/fast
 
 antra_math.obj: antra_math.cpp.obj
 
@@ -128,7 +128,7 @@ antra_math.obj: antra_math.cpp.obj
 
 # target to build an object file
 antra_math.cpp.obj:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_math.cpp.obj
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_math.cpp.obj
 .PHONY : antra_math.cpp.obj
 
 antra_math.i: antra_math.cpp.i
@@ -137,7 +137,7 @@ antra_math.i: antra_math.cpp.i
 
 # target to preprocess a source file
 antra_math.cpp.i:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_math.cpp.i
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_math.cpp.i
 .PHONY : antra_math.cpp.i
 
 antra_math.s: antra_math.cpp.s
@@ -146,7 +146,7 @@ antra_math.s: antra_math.cpp.s
 
 # target to generate assembly for a file
 antra_math.cpp.s:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_math.cpp.s
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_math.cpp.s
 .PHONY : antra_math.cpp.s
 
 antra_uzduotis.obj: antra_uzduotis.cpp.obj
@@ -155,7 +155,7 @@ antra_uzduotis.obj: antra_uzduotis.cpp.obj
 
 # target to build an object file
 antra_uzduotis.cpp.obj:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_uzduotis.cpp.obj
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_uzduotis.cpp.obj
 .PHONY : antra_uzduotis.cpp.obj
 
 antra_uzduotis.i: antra_uzduotis.cpp.i
@@ -164,7 +164,7 @@ antra_uzduotis.i: antra_uzduotis.cpp.i
 
 # target to preprocess a source file
 antra_uzduotis.cpp.i:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_uzduotis.cpp.i
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_uzduotis.cpp.i
 .PHONY : antra_uzduotis.cpp.i
 
 antra_uzduotis.s: antra_uzduotis.cpp.s
@@ -173,7 +173,7 @@ antra_uzduotis.s: antra_uzduotis.cpp.s
 
 # target to generate assembly for a file
 antra_uzduotis.cpp.s:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/antra_uzduotis.cpp.s
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/antra_uzduotis.cpp.s
 .PHONY : antra_uzduotis.cpp.s
 
 student.obj: student.cpp.obj
@@ -182,7 +182,7 @@ student.obj: student.cpp.obj
 
 # target to build an object file
 student.cpp.obj:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/student.cpp.obj
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/student.cpp.obj
 .PHONY : student.cpp.obj
 
 student.i: student.cpp.i
@@ -191,7 +191,7 @@ student.i: student.cpp.i
 
 # target to preprocess a source file
 student.cpp.i:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/student.cpp.i
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/student.cpp.i
 .PHONY : student.cpp.i
 
 student.s: student.cpp.s
@@ -200,7 +200,7 @@ student.s: student.cpp.s
 
 # target to generate assembly for a file
 student.cpp.s:
-	$(MAKE) -f CMakeFiles\AntraUzduotis.dir\build.make CMakeFiles/AntraUzduotis.dir/student.cpp.s
+	$(MAKE) -f CMakeFiles\AntraUzduotis___OOP.dir\build.make CMakeFiles/AntraUzduotis___OOP.dir/student.cpp.s
 .PHONY : student.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... AntraUzduotis
+	@echo ... AntraUzduotis___OOP
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... antra_math.obj

@@ -89,7 +89,7 @@ int main(){
     std::vector<Student> studentVector;
     while (true){
         std::cout << "0: Nutraukti darba" << std::endl;
-        // std::cout << "1: Ivesti studenta" << std::endl;
+        std::cout << "1: Ivesti studenta" << std::endl;
         std::cout << "2: Nuskaityti is failo" << std::endl;
         std::cout << "3: Generuoti faila" << std::endl;
         std::cout << "4: Isvesti duomenu lentele" << std::endl;
