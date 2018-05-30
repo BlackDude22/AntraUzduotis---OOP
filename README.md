@@ -5,6 +5,7 @@
 | Optimization flag | Container type | Strategy | Time |
 |-------------------|----------------|----------|------|
 |None | Vector | 1 | 0.5759|
+| | | 2 | 0.5713|
 
 ## Vertinimas
 
