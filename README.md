@@ -1,5 +1,11 @@
 # AntraUzduotis
 
+## Spartos analizė
+
+| Optimization flag | Container type | Strategy | Time |
+|-------------------|----------------|----------|------|
+|None | Vector | 1 | 0.5759|
+
 ## Vertinimas
 
 
