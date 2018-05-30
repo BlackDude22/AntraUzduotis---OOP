@@ -2,16 +2,12 @@
 
 ## Spartos analizė
 
-| Optimization flag | Container type | Strategy | Time |
-|-------------------|----------------|----------|------|
-|None | Vector | 1 | 0.5759|
-| | | 2 | 0.5713|
-| | List | 1 | 0.5574|
-| | | 2 | 0.5749|
-| | Deque | 1 | 0.5328|
-| | | 2 | 0.5383|
-| 01 | Vector | 1 | |
-| | | 2 | |
+| Optimization flag |  Strategy | Time |
+|-------------------|-----------|------|
+|None |  1 | 0.5759|
+| | 2 | 0.5713|
+| 01 | 1 | |
+| | 2 | |
 
 ## Vertinimas
 
