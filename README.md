@@ -1,5 +1,10 @@
 # AntraUzduotis
 
+## Įdomūss dalykai
+
+auto pivot = std::partition(students.begin(), students.end(), compareByAverage);
+T losers(pivot, students.end());
+students.erase(pivot, students.end());
 
 ## Spartos analizė (100000 studentų)
 
@@ -13,12 +18,6 @@
 | | 2 | 0.3288 |
 | 03 | 1 | 0.2967 |
 | | 2 | 0.2821 |
-
-## Vertinimas
-
-
-- cmake
-- releasai
 
 ## Programos tikslas
 Programa skirta saugoti ir apdoroti studento duomenis bei išbandyti įvairius duomenų konteinerius.
